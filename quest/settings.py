@@ -82,11 +82,11 @@ AUTH_USER_MODEL = "backend.User"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres', 
-        'USER': 'postgres', 
-        'PASSWORD': 'hesham',
-        'HOST': 'localhost', 
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ozpkwanx', 
+        'USER': 'ozpkwanx', 
+        'PASSWORD': 'QVCspZZxhAyULChb01y3uUxdYrLS7KB8',
+        'HOST': 'rogue.db.elephantsql.com', 
         'PORT': '5432',
     }
 }
