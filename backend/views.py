@@ -42,7 +42,8 @@ def signin(request):
         pass1 = request.POST.get('pass1')
         user = authenticate(username = username1, password = pass1)
         if user is not None:
-            return redirect('userPage')
+            login(request, user)
+            return render(request, "webapp/userPage.html", {'username': username1, 'phone': user.phone})
         else:
             messages.error(request, "Not found")
             return redirect('signin')
