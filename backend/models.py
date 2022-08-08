@@ -101,6 +101,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     def is_active(self):
         return self.active
 
+    @property
+    def is_superuser(self):
+        return self.superuser
+
 
 
 
